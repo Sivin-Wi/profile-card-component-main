@@ -1,0 +1,157 @@
+@media only screen and (max-width:375px) {
+
+
+    :root {
+        --bgColor: hsl(185, 75%, 39%);
+        --bgColorCard: #fff;
+        --h1_h4FontColor: hsl(229, 23%, 23%);
+        --pFontColor: hsl(0, 0%, 59%);
+    }
+
+    @font-face {
+        font-family: 'Kumbh Sans';
+        src: url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-size: 18px;
+        font-family: 'Kumbh Sans', sans-serif;
+    }
+
+    .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100svh;
+        width: 100%;
+        background-color: var(--bgColor);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .section>.bg-img1 {
+        position: absolute;
+        z-index: 1;
+        top: -150px;
+        left: -100px;
+    }
+
+    .section>.bg-img2 {
+        position: absolute;
+        z-index: 1;
+        bottom: -130px;
+        right: -100px;
+    }
+
+    .container {
+        width: 330px;
+        height: 380px;
+        border-radius: 13px;
+        position: relative;
+        background-color: var(--bgColorCard);
+        z-index: 2;
+    }
+
+    .container>.subContainer1 {
+        width: 100%;
+        height: 130px;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+        background-image: url('../images/bg-pattern-card.svg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+
+    .container>.subContainerMain2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container>.subContainerMain2>.subContainer2-1 {
+        height: 143px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container>.subContainerMain2>.subContainer2-1>.headingSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 11px;
+        margin-top: 64px;
+        height: 30px;
+    }
+
+    .container>.subContainerMain2>.subContainer2-1>.headingSection>div>h4 {
+        font-weight: 700;
+        color: var(--h1_h4FontColor);
+    }
+
+    .container>.subContainerMain2>.subContainer2-1>.headingSection>div>p {
+        font-weight: 400;
+        color: var(--pFontColor_borderLineColor);
+    }
+
+    .container>.subContainerMain2>.subContainer2-1>.paraSection>p {
+        margin-top: 5px;
+        font-weight: 400;
+        color: var(--pFontColor);
+    }
+
+    .container>.subContainerMain2>.subContainer2-2 {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 80px;
+        z-index: 1;
+    }
+
+    .container>.subContainerMain2>.subContainer2-2>div>img {
+        border-radius: 50%;
+        border: 4px solid #fff;
+    }
+
+
+    .container>.subContainerMain2>.subContainer2-3 {
+        border-top: 1.5px solid hsl(0, 0%, 59%, 0.27);
+        height: 105px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        line-height: 1.5;
+        text-align: center;
+        border-bottom-left-radius: 13px;
+        border-bottom-right-radius: 13px;
+    }
+
+    .container>.subContainerMain2>.subContainer2-3>div>h4 {
+        font-weight: 700;
+        color: var(--h1_h4FontColor);
+    }
+
+    .container>.subContainerMain2>.subContainer2-3>div>p {
+        font-weight: 400;
+        color: var(--pFontColor);
+    }
+
+
+    .attribution {
+        display: none;
+    }
+}
